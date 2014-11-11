@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:view>
+        <f:event type="preRenderView" listener="#{user.checkLogin}"/> 
+        <head><title>IGNORED</title></head>
+        <h:body>
+            <ui:composition template="/templates/masterLayout.xhtml">
+                <ui:define name="windowTitle">
+                    #{msgs.black}
+                </ui:define> 
+
+                <ui:define name="content">
+                    Black tea is a type of tea that is more oxidized than oolong, green and white teas. All four types are made from leaves of the shrub (or small tree) Camellia sinensis. Black tea is generally stronger in flavor than the less oxidized teas. Two principal varieties of the species are used – the small-leaved Chinese variety plant (C. sinensis subsp. sinensis), used for most other types of teas, and the large-leaved Assamese plant (C. sinensis subsp. assamica), which was traditionally mainly used for black tea, although in recent years some green and white have been produced.
+                    
+                </ui:define>
+            </ui:composition>       
+
+
+        </h:body>
+    </f:view>
+</html>
